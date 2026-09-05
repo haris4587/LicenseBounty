@@ -189,3 +189,35 @@ def test_challenge_reopens_window_without_losing_original_audit_record(
     assert bounty["current_verdict"] == "COMPLIANT"
     assert challenge["challenge_result"] == "UPHELD"
     assert json.loads(contract.get_evaluation("license-demo-001", 1))["commit_sha"] == COMMIT
+
+
+def test_unavailable_challenge_evidence_records_safe_result_without_unpack_error(
+    direct_vm, direct_deploy, direct_alice, direct_bob
+):
+    contract = direct_deploy("contracts/license_bounty.py")
+    create_and_accept(contract, direct_vm, direct_alice, direct_bob)
+    submit(contract, direct_vm, direct_bob)
+    configure_repo(direct_vm)
+    configure_evaluation_llm(direct_vm)
+    direct_vm.sender = direct_alice
+    contract.evaluate_compliance("license-demo-001")
+
+    challenge_url = "https://registry.npmjs.org/example-package/1.0.0"
+    direct_vm.mock_web(
+        r"https://registry\.npmjs\.org/example-package/1\.0\.0",
+        {"status": 503, "body": b""},
+    )
+    direct_vm.sender = direct_bob
+    contract.challenge_verdict(
+        "license-demo-001",
+        "challenge-license-unavailable",
+        "The original review left a dependency license unverified; please re-check the official package evidence.",
+        challenge_url,
+    )
+
+    bounty = json.loads(contract.get_bounty("license-demo-001"))
+    challenge = json.loads(contract.get_challenge("challenge-license-unavailable"))
+    assert bounty["status"] == "CHALLENGE_REVIEWED"
+    assert bounty["challenge_count"] == 1
+    assert challenge["challenge_result"] == "EVIDENCE_UNAVAILABLE"
+    assert challenge["uphold_original"] is True
