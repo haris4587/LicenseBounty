@@ -10,10 +10,19 @@ addresses remain listed as superseded because they reference the stale source.
 | Chain ID | `61999` |
 | Contract address | `0xe1490cE6FC7Cb0E5946546d4a189273187f58c37` |
 | Deployment transaction | `0x50d46d89d26cd927348cde61cc2d1ac172b8f0481443667882ffe00a3057797b` |
-| First finalized Full Consensus transaction | `TODO_AFTER_TEST` |
+| First finalized Full Consensus transaction | `0x3134eb74d350b9277209623c4f2801acf2dcb829227382757403930f4b40065f` |
 | Website URL | `TODO_AFTER_FRONTEND_DEPLOYMENT` |
 | Canonical GitHub commit | `912793a172eba727bc9c0208511680d6db715ea9` (contract source commit) |
 | Recorded at | `2026-09-05` |
+
+## Verified v3 demo
+
+- Bounty: `license-demo-005`
+- Submission commit: `689c25c7526c5f090ba252ed60fb92fd2629ab71`
+- Verdict: `COMPLIANT` / `100`
+- Evidence status: `VERIFIED`
+- Checks: license policy PASS, dependency policy PASS, attribution PASS, prohibited-license scan PASS
+- Escrow: `1 GEN` awaiting the 300-second challenge window and settlement
 
 ## Superseded deployments
 
