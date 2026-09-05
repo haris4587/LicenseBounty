@@ -10,7 +10,7 @@
 - **Least privilege:** only sponsor/developer can request reviews or challenge; only the designated developer can accept or submit.
 - **Bounded challenges:** at most two challenge records per bounty; every challenge reopens only a finite challenge window.
 - **No stranded escrow:** sponsor cancellation, deadline-plus-grace refund, and evidence retry paths keep a recoverable exit available.
-- **Exact payout accounting:** the escrow map is zeroed after transfer and aggregate locked totals decrease by the full amount.
+- **Exact payout accounting:** the authoritative `escrow_remaining_wei` record is zeroed after transfer and aggregate locked totals decrease by the full amount.
 
 ## Known limitations
 
