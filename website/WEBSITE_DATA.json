@@ -5,10 +5,12 @@
   "chain_id": 61999,
   "rpc_url": "https://studio.genlayer.com/api",
   "native_symbol": "GEN",
-  "contract_address": "0x8D9398D3D205C62dB1601454770d199EE1078be1",
+  "contract_address": "REPLACE_AFTER_DEPLOYMENT",
+  "deployment_transaction": "REPLACE_AFTER_DEPLOYMENT",
   "github_url": "https://github.com/haris4587/LicenseBounty",
   "contract_path": "contracts/license_bounty.py",
-  "source_commit": "bc694f1049dcb02fa06b8eb8c3c29d2f20c916a4",
+  "source_commit": "912793a172eba727bc9c0208511680d6db715ea9",
+  "release_status": "PENDING_FINAL_V3_DEPLOYMENT",
   "primary_flow": [
     "Create GEN-funded bounty",
     "Developer accepts locked terms",
@@ -17,22 +19,7 @@
     "Challenge with counter-evidence",
     "Settle after finality"
   ],
-  "verdicts": [
-    "COMPLIANT",
-    "PARTIALLY_COMPLIANT",
-    "REJECTED"
-  ],
-  "statuses": [
-    "CREATED",
-    "ACCEPTED",
-    "SUBMITTED",
-    "EVALUATED",
-    "EVIDENCE_REVIEW",
-    "CHALLENGE_REVIEWED",
-    "SETTLED",
-    "EXPIRED_REFUNDED",
-    "CANCELLED"
-  ],
-  "wallet_required": true,
-  "deployment_transaction": "0xe3f2a1f628ababeed2737489ae64d5bf15ee7041247016bfea4757bcd775ce47"
+  "verdicts": ["COMPLIANT", "PARTIALLY_COMPLIANT", "REJECTED"],
+  "statuses": ["CREATED", "ACCEPTED", "SUBMITTED", "EVALUATED", "EVIDENCE_REVIEW", "CHALLENGE_REVIEWED", "SETTLED", "EXPIRED_REFUNDED", "CANCELLED"],
+  "wallet_required": true
 }
