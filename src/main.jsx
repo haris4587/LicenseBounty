@@ -24,7 +24,7 @@ function App() {
   const [tx, setTx] = useState("");
   const [error, setError] = useState("");
   const [tab, setTab] = useState("explore");
-  const [form, setForm] = useState({ bountyId: "license-demo-005", title: "Open-source API bounty", developer: "", requirements: "Use an allowed permissive license, include attribution, and avoid prohibited dependency licenses.", allowed: "MIT\nApache-2.0\nBSD-3-Clause", prohibited: "GPL-3.0\nAGPL-3.0", attribution: true, copyleft: false, deadline: "", grace: "3600", challenge: "300", partial: "70", amount: "0.01" });
+  const [form, setForm] = useState({ bountyId: "license-demo-005", title: "Open-source API bounty", developer: "", requirements: "Use an allowed permissive license, include attribution, and avoid prohibited dependency licenses.", allowed: "MIT\nApache-2.0\nBSD-3-Clause", prohibited: "GPL-3.0\nAGPL-3.0", attribution: true, copyleft: false, deadline: "", grace: "3600", challenge: "300", partial: "70", amount: "1" });
   const [submission, setSubmission] = useState({ bountyId: "license-demo-005", repo: "https://github.com/", commit: "", dependencyEvidence: "", attestation: "I confirm this exact commit is the work submitted for the bounty and the license information is complete." });
 
   const requireWallet = () => { if (!wallet || !client) throw new Error("Connect MetaMask to GenLayer Studio first."); if (ZERO) throw new Error("The contract address is not configured yet."); return client; };
