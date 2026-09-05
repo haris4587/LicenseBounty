@@ -1,16 +1,15 @@
 # Deployment record
 
-The previous address is intentionally not listed as active: it points to a stale
-deployment that references a missing `self.escrows` map. Fill the active fields
-only after the user deploys the marked LicenseBounty v3 source in GenLayer Studio.
+The active deployment below is the marked LicenseBounty v3 source. Previous
+addresses remain listed as superseded because they reference the stale source.
 
 | Field | Value |
 | --- | --- |
 | Network | GenLayer Studio / Studionet |
 | RPC | `https://studio.genlayer.com/api` |
 | Chain ID | `61999` |
-| Contract address | `PENDING_V3_DEPLOYMENT` |
-| Deployment transaction | `PENDING_V3_DEPLOYMENT` |
+| Contract address | `0xe1490cE6FC7Cb0E5946546d4a189273187f58c37` |
+| Deployment transaction | `0x50d46d89d26cd927348cde61cc2d1ac172b8f0481443667882ffe00a3057797b` |
 | First finalized Full Consensus transaction | `TODO_AFTER_TEST` |
 | Website URL | `TODO_AFTER_FRONTEND_DEPLOYMENT` |
 | Canonical GitHub commit | `912793a172eba727bc9c0208511680d6db715ea9` (contract source commit) |
