@@ -11,6 +11,15 @@
   "contract_path": "contracts/license_bounty.py",
   "source_commit": "912793a172eba727bc9c0208511680d6db715ea9",
   "release_status": "DEPLOYED_V3_PENDING_LIVE_FLOW",
+  "demo": {
+    "bounty_id": "license-demo-005",
+    "submission_commit": "689c25c7526c5f090ba252ed60fb92fd2629ab71",
+    "evaluation_transaction": "0x3134eb74d350b9277209623c4f2801acf2dcb829227382757403930f4b40065f",
+    "verdict": "COMPLIANT",
+    "score": 100,
+    "evidence_status": "VERIFIED",
+    "settlement_status": "CHALLENGE_WINDOW_OPEN"
+  },
   "primary_flow": [
     "Create GEN-funded bounty",
     "Developer accepts locked terms",
