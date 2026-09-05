@@ -5,7 +5,7 @@
   "chain_id": 61999,
   "rpc_url": "https://studio.genlayer.com/api",
   "native_symbol": "GEN",
-  "contract_address": "REPLACE_AFTER_DEPLOYMENT",
+  "contract_address": "0xc72B1177A4b02036d2fA53148f430b9A7B44B618",
   "github_url": "https://github.com/haris4587/LicenseBounty",
   "contract_path": "contracts/license_bounty.py",
   "primary_flow": [
@@ -16,7 +16,22 @@
     "Challenge with counter-evidence",
     "Settle after finality"
   ],
-  "verdicts": ["COMPLIANT", "PARTIALLY_COMPLIANT", "REJECTED"],
-  "statuses": ["CREATED", "ACCEPTED", "SUBMITTED", "EVALUATED", "EVIDENCE_REVIEW", "CHALLENGE_REVIEWED", "SETTLED", "EXPIRED_REFUNDED", "CANCELLED"],
-  "wallet_required": true
+  "verdicts": [
+    "COMPLIANT",
+    "PARTIALLY_COMPLIANT",
+    "REJECTED"
+  ],
+  "statuses": [
+    "CREATED",
+    "ACCEPTED",
+    "SUBMITTED",
+    "EVALUATED",
+    "EVIDENCE_REVIEW",
+    "CHALLENGE_REVIEWED",
+    "SETTLED",
+    "EXPIRED_REFUNDED",
+    "CANCELLED"
+  ],
+  "wallet_required": true,
+  "deployment_transaction": "0x3fd7930b4a4c3451b8b65761ed6045b60bf79500aab24f5b7902085d71f54eef"
 }
