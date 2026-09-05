@@ -2,7 +2,7 @@
 
 After deployment, replace placeholders with real values and capture screenshots of the following finalized transactions:
 
-1. Sponsor connects MetaMask to GenLayer Studio and creates a bounty with 0.01 GEN.
+1. Sponsor connects MetaMask to GenLayer Studio and creates a bounty with 1 GEN.
 2. Developer account accepts the displayed `terms_hash`.
 3. Developer submits a public GitHub repository at a full commit SHA.
 4. Sponsor or developer runs `evaluate_compliance` with Simulation Mode disabled and Normal / Full Consensus selected.
