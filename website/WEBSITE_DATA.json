@@ -5,9 +5,10 @@
   "chain_id": 61999,
   "rpc_url": "https://studio.genlayer.com/api",
   "native_symbol": "GEN",
-  "contract_address": "0xc72B1177A4b02036d2fA53148f430b9A7B44B618",
+  "contract_address": "0x74DE9D76F98a4919A91aD6f3E82cf90317d539bb",
   "github_url": "https://github.com/haris4587/LicenseBounty",
   "contract_path": "contracts/license_bounty.py",
+  "source_commit": "bc694f1049dcb02fa06b8eb8c3c29d2f20c916a4",
   "primary_flow": [
     "Create GEN-funded bounty",
     "Developer accepts locked terms",
@@ -33,5 +34,5 @@
     "CANCELLED"
   ],
   "wallet_required": true,
-  "deployment_transaction": "0x3fd7930b4a4c3451b8b65761ed6045b60bf79500aab24f5b7902085d71f54eef"
+  "deployment_transaction": "0xba55981bab85ff7b848a6b14753d78f9e6142b423411f51addf02b9ade1df111"
 }
