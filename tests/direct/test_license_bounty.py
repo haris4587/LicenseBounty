@@ -97,8 +97,9 @@ def test_acceptance_binds_immutable_terms_and_submission_requires_full_commit(
 ):
     contract = direct_deploy("contracts/license_bounty.py")
     create_and_accept(contract, direct_vm, direct_alice, direct_bob)
-    assert json.loads(contract.get_bounty("license-demo-001"))["developer_accepted"] is True
-    assert int(contract.escrows.get("license-demo-001", 0)) == 10**18
+    bounty = json.loads(contract.get_bounty("license-demo-001"))
+    assert bounty["developer_accepted"] is True
+    assert bounty["escrow_remaining_wei"] == str(10**18)
 
     with direct_vm.expect_revert("Repository reference must contain a full lowercase 40-character commit SHA"):
         contract.submit_repository(
