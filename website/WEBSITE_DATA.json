@@ -1,0 +1,22 @@
+{
+  "project_name": "LicenseBounty",
+  "tagline": "License-aware escrow for open-source bounties",
+  "network": "GenLayer Studio",
+  "chain_id": 61999,
+  "rpc_url": "https://studio.genlayer.com/api",
+  "native_symbol": "GEN",
+  "contract_address": "REPLACE_AFTER_DEPLOYMENT",
+  "github_url": "https://github.com/haris4587/LicenseBounty",
+  "contract_path": "contracts/license_bounty.py",
+  "primary_flow": [
+    "Create GEN-funded bounty",
+    "Developer accepts locked terms",
+    "Submit repository at exact commit",
+    "Run Full Consensus license review",
+    "Challenge with counter-evidence",
+    "Settle after finality"
+  ],
+  "verdicts": ["COMPLIANT", "PARTIALLY_COMPLIANT", "REJECTED"],
+  "statuses": ["CREATED", "ACCEPTED", "SUBMITTED", "EVALUATED", "EVIDENCE_REVIEW", "CHALLENGE_REVIEWED", "SETTLED", "EXPIRED_REFUNDED", "CANCELLED"],
+  "wallet_required": true
+}
