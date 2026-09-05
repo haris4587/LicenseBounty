@@ -5,7 +5,7 @@
   "chain_id": 61999,
   "rpc_url": "https://studio.genlayer.com/api",
   "native_symbol": "GEN",
-  "contract_address": "0x74DE9D76F98a4919A91aD6f3E82cf90317d539bb",
+  "contract_address": "0x8D9398D3D205C62dB1601454770d199EE1078be1",
   "github_url": "https://github.com/haris4587/LicenseBounty",
   "contract_path": "contracts/license_bounty.py",
   "source_commit": "bc694f1049dcb02fa06b8eb8c3c29d2f20c916a4",
@@ -34,5 +34,5 @@
     "CANCELLED"
   ],
   "wallet_required": true,
-  "deployment_transaction": "0xba55981bab85ff7b848a6b14753d78f9e6142b423411f51addf02b9ade1df111"
+  "deployment_transaction": "0xe3f2a1f628ababeed2737489ae64d5bf15ee7041247016bfea4757bcd775ce47"
 }
